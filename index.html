@@ -5,11 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geary Cooney for Governor</title>
 <style>
+/* ===== LAYOUT GRID ===== */
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
   gap: 20px;
 }
+
+/* ===== TOP BUTTON BAR ===== */
+.top-bar {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.top-bar .box {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ===== TITLE ROW ===== */
+.page-title {
+  grid-column: 1 / 3;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+/* ===== MISSION STATEMENT ===== */
+.mission {
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+/* ===== CENTER STACK ===== */
+.center-stack {
+  grid-column:
 </style>
   <style>
   body {
@@ -37,19 +69,17 @@
 </style>
 </head>
 <body>
- <div class="container">
+ 
+  <div class="container">
   <h1>Geary Cooney for Governor of Kentucky</h1>
   <section class="box">
   <h2>Mission Statement</h2>
-
+<div class="main-grid">
   <p>
     <strong>Healthy Food, More Healthcare Options, Federal Grants, and a Stronger Workforce — Building a Booming Economy</strong>
   </p>
 
-  <p>
-    
-    The federal government already provides grant funding to states for nutrition, agriculture, and food-access programs. Kentucky does not need new taxes or new debt to feed its people — it needs to properly request and use the resources that already exist.
-  </p>
+  
 
   
 
@@ -59,11 +89,8 @@
 
   <p>
     A healthier population creates a stronger workforce. Fewer sick days, lower medical costs, and better long-term health mean higher productivity across every industry. Businesses save money, workers stay employed, and the state grows stronger without expanding bureaucracy.
-  <h2>Meet & Greets</h2>
-
-  <p>
-    This is how smart policy aligns: healthy food supports better healthcare, better healthcare strengthens the workforce, and a stronger workforce drives a booming Kentucky economy — all funded through existing federal programs and responsible coordination, not debt.
-  </p>
+  
+</div>
   </section>
   <p><strong>Details coming soon.</strong></p>
 
@@ -71,6 +98,7 @@
 
   <p>
     I’m a working-class Kentucky veteran, not a career politician.
+    
     I’m running to bring practical solutions like affordable healthcare,
     healthy food and water, and honest government back to the people of kentucky
   </p>
